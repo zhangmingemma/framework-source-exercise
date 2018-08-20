@@ -1,0 +1,68 @@
+/*
+* @Author: zhangmingemma
+* @Date:   2018-06-13 11:47:26
+* @Last Modified by:   zhangmingemma
+* @Last Modified time: 2018-06-13 11:48:00
+*/
+.compute-container{
+	background-color: black;
+	width: 290px;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 4px;
+}
+.round-btn{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	border-radius: 37.5px;
+	margin: 4px;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 20px;
+}
+.zero-btn{
+	border-radius: 50%;
+	width: 128px;
+	height: 60px;
+	border-radius: 37.5px;
+	margin: 4px;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 20px;
+}
+.number{
+	background-color: #5B5B5B;
+}
+.lightgrey{
+	background-color: lightgrey;
+	color: black;
+}
+.yellow{
+	background-color: orange;
+}
+.result-container{
+	flex: 0 0 150px;
+	width: 100%;
+	color: white;
+	font-size:50px;
+	word-break: break-all;
+	overflow: hide;
+	writing-mode: lr-tb;
+	background-color: black;
+	border: none;
+	outline: none;
+	text-align:right;
+}
+.keyboard-container{
+	flex: 1; 
+}

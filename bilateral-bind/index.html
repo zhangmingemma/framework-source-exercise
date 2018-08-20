@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bilateral bind</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="mvvm-app">
+        <input type="text" v-model="word">
+        <p>{{word}}</p>
+        <button v-on:click="sayHi">change data</button>
+    </div>
+</body>
+<script src="observer.js"></script>
+<script src="watcher.js"></script> 
+<script src="compile.js"></script> 
+<script src="mvvm.js"></script>
+<script type="text/javascript">
+var vm = new MVVM({
+    el:'#mvvm-app',
+    data:{
+        word:'Hellow World',
+        message: 'this is the second message'
+    },
+    methods:{
+        sayHi:function(){
+            this.word = 'Hi, everybody!'
+        }
+    }
+})
+// var el = document.querySelector('#mvvm-app');
+// console.log(el);
+</script>
+</html>
