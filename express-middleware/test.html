@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Express中间件</title>
+    <script src="core.js"></script>
+</head>
+<body>   
+</body>
+<script>
+/**
+ * test: 测试代码
+ * app.use的时候，只是将中间件处理函数添加到中间件列表中，app.next的时候在中间件列表中逐一执行
+ */
+let app = new App();
+app.use(lineParser);
+app.use(headerParser);
+app.use(bodyParser);
+app.use(middleware);
+app.next();
+</script>
+</html>
